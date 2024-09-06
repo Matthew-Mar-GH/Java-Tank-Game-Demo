@@ -1,22 +1,10 @@
 public class main {
   public static void main(String[] args) {
+    Tank tank1 = new Tank(50, 10, 0, 1);
+    Tank tank2 = new Tank(50, 10, 0, 2);
+    Tank tank3 = new Tank(50, 10, 0, 3);
 
-  }
-}
-sdfsd
-class Tank {
-  int health;
-  int defense;
-  int dmgmodifier;
-  int id;
-  public Tank(int health, int defense, int dmgmodifier, int id) {
-    this.health = health;
-    this.defense = defense;
-    this.dmgmodifier = dmgmodifier;
-    this.id = id;
-  }
-
-  public static void main(String[] args) {
-    Tank tank1 = new Tank();
+    tank2.ArmorUp();
+    tank1.Shoot(tank2);
   }
 }
